@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Terapia - Physical Therapy Website Template</title>
+        <title>Dr. Farish Dentist</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -45,7 +45,9 @@
             <div class="row gx-0 align-items-center" style="height: 45px;">
                 <div class="col-lg-8 text-center text-lg-start mb-lg-0">
                     <div class="d-flex flex-wrap">
-                        <a href="#" class="text-light me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
+                        <a href="https://www.google.com/maps/place/FSKM+UiTM+Kampus+Jasin+Melaka/@2.224704,102.4552199,16.75z/data=!4m6!3m5!1s0x31d1c32d2db6b385:0x9e5830449f08e4ea!8m2!3d2.2280295!4d102.4552297!16s%2Fg%2F11h5dm2smv?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="text-light me-4">
+    						<i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location
+						</a>
                         <a href="#" class="text-light me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a>
                         <a href="#" class="text-light me-0"><i class="fas fa-envelope text-primary me-2"></i>Example@gmail.com</a>
                     </div>
@@ -67,7 +69,8 @@
         <div class="container-fluid position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
                 <a href="HomepageS.html" class="navbar-brand p-0">
-                    <h1 class="text-primary m-0"><i class="fas fa-star-of-life me-3"></i>Dr. Farish Dentist</h1>
+                    <h1 class="text-primary m-0"><img src="img/logo.png" alt="Logo" class="me-3" style="height: 30px;">
+                    </i>Dr. Farish Dentist</h1>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -81,12 +84,12 @@
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0">
-                                <a href="appointment.html" class="dropdown-item">Appointment</a>
                                 <a href="ViewAppS.html" class="dropdown-item">View Appointment</a>
                                 <a href="profile.html" class="dropdown-item">Profile</a>
                                 <a href="UpdateAppS.html" class="dropdown-item active">Update Appointment</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
+                                <a href="CreateSche.html" class="dropdown-item active">Create Schedule</a>
+                                <a href="UpdateSche.html" class="dropdown-item">Update Schedule</a>
+                                <a href="ViewSche.html" class="dropdown-item">View Schedule</a>
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact Us</a>
@@ -98,103 +101,104 @@
         <!-- Navbar End -->
 
 
-        <!-- Header Start -->
-        <div class="container-fluid bg-breadcrumb">
-            <div class="container text-center py-5" style="max-width: 900px;">
-                <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Team</h1>
-                <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
-                    <li class="breadcrumb-item"><a href="Homepage.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item active text-primary">Team</li>
-                </ol>    
-            </div>
-        </div>
-        <!-- Header End -->
+	        <!-- Header Start -->
+	        <div class="container-fluid bg-breadcrumb">
+	            <div class="container text-center py-5" style="max-width: 900px;">
+	                <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">View Appointment</h3>
+	                <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+	                    <li class="breadcrumb-item"><a href="Homepage.html">Home</a></li>
+	                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+	                    <li class="breadcrumb-item active text-primary">View Appointment</li>
+	                </ol>    
+	            </div>
+	        </div>
+	        <!-- Header End -->
+	
+	
+	<div class="container-fluid py-5">
+		    <div class="container py-5">
+		        <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
+		            <div class="sub-style">
+		                <h4 class="sub-title px-3 mb-0">Your Appointments</h4>
+		            </div>
+						<h1 class="display-5 mb-4">Patient Appointment Records</h1>
+						<p class="mb-0">Below is a list of scheduled dental appointments. (Ensure patients are advised to arrive at least 10 minutes before their estimated time.)</p>
+					</div>
+			<table class="table table-bordered table-striped">
+	    <thead class="table-primary">
+	        <tr>
+	            <th>Appointment ID</th>
+	            <th>Doctor Name</th>
+	            <th>Staff Name</th>
+	            <th>Patient Name</th>
+	            <th>Date</th>
+	            <th>Time</th>
+	            <th>Status</th>
+	            <th>Action</th>
+	        </tr>
+	    </thead>
+	    <tbody>
+	        <tr>
+	            <td>APT001</td>
+	            <td id="doctor-APT001">Dr. Farish</td>
+	            <td>John Doe</td>
+	            <td>Jane Smith</td>
+	            <td>2025-05-15</td>
+	            <td>10:00 AM</td>
+	            <td id="status-APT001">Not Finished</td>
+	            <td>
+	                <button class="btn btn-sm btn-primary edit-status-btn"
+	                        data-bs-toggle="modal"
+	                        data-bs-target="#updateStatusModal"
+	                        data-appointment-id="APT001"
+	                        data-status="Not Finished"
+	                        data-doctor="Dr. Farish">
+	                    Update
+	                </button>
+	            </td>
+	        </tr>
+	        <!-- Additional rows as necessary -->
+	    </tbody>
+	</table>
 
-
-        <!-- Team Start -->
-        <div class="container-fluid team py-5">
-            <div class="container py-5">
-                <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="sub-style">
-                        <h4 class="sub-title px-3 mb-0">Meet our team</h4>
-                    </div>
-                    <h1 class="display-3 mb-4">Physiotherapy Services from Professional Therapist</h1>
-                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
-                </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item rounded">
-                            <div class="team-img rounded-top h-100">
-                                <img src="img/team-1.jpg" class="img-fluid rounded-top w-100" alt="">
-                                <div class="team-icon d-flex justify-content-center">
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                            <div class="team-content text-center border border-primary border-top-0 rounded-bottom p-4">
-                                <h5>Full Name</h5>
-                                <p class="mb-0">Message Physio Therapist</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item rounded">
-                            <div class="team-img rounded-top h-100">
-                                <img src="img/team-2.jpg" class="img-fluid rounded-top w-100" alt="">
-                                <div class="team-icon d-flex justify-content-center">
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                            <div class="team-content text-center border border-primary border-top-0 rounded-bottom p-4">
-                                <h5>Full Name</h5>
-                                <p class="mb-0">Rehabilitation Therapist</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="team-item rounded">
-                            <div class="team-img rounded-top h-100">
-                                <img src="img/team-3.jpg" class="img-fluid rounded-top w-100" alt="">
-                                <div class="team-icon d-flex justify-content-center">
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                            <div class="team-content text-center border border-primary border-top-0 rounded-bottom p-4">
-                                <h5>Full Name</h5>
-                                <p class="mb-0">Doctor of Physical therapy</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="team-item rounded">
-                            <div class="team-img rounded-top h-100">
-                                <img src="img/team-4.jpg" class="img-fluid rounded-top w-100" alt="">
-                                <div class="team-icon d-flex justify-content-center">
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                            <div class="team-content text-center border border-primary border-top-0 rounded-bottom p-4">
-                                <h5>Full Name</h5>
-                                <p class="mb-0">Doctor of Physical therapy</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Team End -->
+		
+		<!-- Update Status Modal -->
+			<div class="modal fade" id="updateStatusModal" tabindex="-1" aria-labelledby="updateStatusModalLabel" aria-hidden="true">
+			    <div class="modal-dialog modal-dialog-centered">
+			        <div class="modal-content">
+			            <div class="modal-header bg-primary text-white">
+			                <h5 class="modal-title" id="updateStatusModalLabel">Update Appointment Status</h5>
+			                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			            </div>
+			            <div class="modal-body">
+			                <form id="updateStatusForm">
+			                    <input type="hidden" id="appointmentId" name="appointmentId">
+			                    <div class="mb-3">
+			                        <label for="appointmentStatus" class="form-label">Status</label>
+			                        <select id="appointmentStatus" class="form-select" name="status">
+			                            <option value="Not Finished">Not Finished</option>
+			                            <option value="Finished">Finished</option>
+			                        </select>
+			                    </div>
+			                    <div class="mb-3">
+								    <label for="appointmentDoctor" class="form-label">Doctor</label>
+								    <select id="appointmentDoctor" class="form-select" name="doctor">
+								        <option value="Dr. Farish">Dr. Farish</option>
+								        <option value="Dr. Lee">Dr. Lee</option>
+								        <option value="Dr. Ahmed">Dr. Ahmed</option>
+								        <!-- Add more doctors as needed -->
+								    </select>
+								</div> 
+			                    <div class="modal-footer">
+			                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			                        <button type="submit" class="btn btn-primary">Save Changes</button>
+			                    </div>
+			                </form>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+		
 
 
         <!-- Footer Start -->
