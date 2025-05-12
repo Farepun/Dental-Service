@@ -63,6 +63,20 @@
             padding: 10px 0;
             margin-top: 50px;
         }
+
+        .nav-button {
+            background-color: #004d99;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .nav-button:hover {
+            background-color: #003366;
+        }
     </style>
 </head>
 <body>
@@ -97,6 +111,9 @@
 
         <input type="submit" value="Save Schedule" />
     </form>
+
+    <a href="Homepage.html" class="nav-button">Back to Home</a>
+    <a href="ViewScheduleDoc.html" class="nav-button">View Schedule</a>
 </main>
 
 <footer>
@@ -115,7 +132,7 @@
         const availability = document.getElementById('availability').value;
 
         // Redirect to the view schedule page with query parameters
-        window.location.href = `view_schedule.html?doctor_id=${doctorId}&doctor_name=${doctorName}&schedule_date=${scheduleDate}&start_time=${startTime}&end_time=${endTime}&availability=${availability}`;
+        window.location.href = `ViewScheduleDoc.html?doctor_id=${doctorId}&doctor_name=${doctorName}&schedule_date=${scheduleDate}&start_time=${startTime}&end_time=${endTime}&availability=${availability}`;
     });
 </script>
 

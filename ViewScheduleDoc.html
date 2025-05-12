@@ -53,6 +53,20 @@
       padding: 10px 0;
       margin-top: 50px;
     }
+
+    .nav-button {
+      background-color: #004d99;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+
+    .nav-button:hover {
+      background-color: #003366;
+    }
   </style>
 </head>
 <body>
@@ -78,6 +92,10 @@
     <!-- Schedule data will be dynamically inserted here -->
     </tbody>
   </table>
+
+  <!-- Navigation Buttons -->
+  <a href="CreateScheduleDoc.html" class="nav-button">Create New</a>
+  <a href="UpdateScheduleDoc.html" class="nav-button">Update Schedule</a>
 </main>
 
 <footer>
@@ -85,32 +103,21 @@
 </footer>
 
 <script>
-  function getQueryParams() {
-    const urlParams = new URLSearchParams(window.location.search);
-    return {
-      doctor_id: urlParams.get('doctor_id'),
-      doctor_name: urlParams.get('doctor_name'),
-      schedule_date: urlParams.get('schedule_date'),
-      start_time: urlParams.get('start_time'),
-      end_time: urlParams.get('end_time'),
-      availability: urlParams.get('availability')
-    };
-  }
-
   function displaySchedule() {
-    const params = getQueryParams();
+    // Retrieve the schedule data from Local Storage
+    const scheduleData = JSON.parse(localStorage.getItem('scheduleData'));
     const tableBody = document.getElementById('scheduleTableBody');
 
-    if (params.doctor_id && params.doctor_name && params.schedule_date) {
+    if (scheduleData) {
       const row = document.createElement('tr');
       row.innerHTML = `
-          <td>${params.doctor_id}</td>
-          <td>${params.doctor_name}</td>
-          <td>${params.schedule_date}</td>
-          <td>${params.start_time}</td>
-          <td>${params.end_time}</td>
-          <td>${params.availability}</td>
-        `;
+                <td>${scheduleData.doctor_id}</td>
+                <td>${scheduleData.doctor_name}</td>
+                <td>${scheduleData.schedule_date}</td>
+                <td>${scheduleData.start_time}</td>
+                <td>${scheduleData.end_time}</td>
+                <td>${scheduleData.availability}</td>
+            `;
       tableBody.appendChild(row);
     } else {
       const row = document.createElement('tr');
