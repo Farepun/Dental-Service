@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Update Profile - Dr. Farish Dentist</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Update Profile Start -->
+    <div class="container-fluid py-5 bg-light">
+        <div class="container py-5">
+            <div class="section-title mb-5 text-center">
+                <div class="sub-style">
+                    <h4 class="sub-title px-3 mb-0">Update Information</h4>
+                </div>
+                <h1 class="display-5 mb-4">Update Your Profile</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form action="update_patient.php" method="POST">
+                        <div class="mb-3">
+                            <label for="staffId" class="form-label">Staff ID</label>
+                            <input type="text" class="form-control" id="staffId" name="staffId" placeholder="Enter Staff ID" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="staffName" class="form-label">Staff Name</label>
+                            <input type="text" class="form-control" id="staffName" name="staffName" placeholder="Enter Staff Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="staffRole" class="form-label">Staff Role</label>
+                            <textarea class="form-control" id="staffRole" name="staffRole" rows="1" placeholder="Enter Role" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="staffPhone" class="form-label">Staff Phone Number</label>
+                            <input type="text" class="form-control" id="staffPhone" name="staffPhone" placeholder="Enter Phone Number" required>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success px-5 py-2">Update</button>
+                            <a href="profile.html" class="btn btn-secondary px-5 py-2 ms-2">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Update Profile End -->
+
+</body>
+</html>
